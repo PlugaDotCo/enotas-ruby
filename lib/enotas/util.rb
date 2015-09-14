@@ -1,7 +1,6 @@
 module Enotas
   class Util
     OBJECT_TYPES = {
-        # 'company' => Enotas::Company
     }
 
     def self.get_object_type(type)
