@@ -25,12 +25,11 @@ describe Enotas::Nfe do
 
   it 'should create a Nfe' do
     nfe = Enotas::Nfe.create(@empresa_id, @nfe)
-
     expect(nfe[:nfeId]).to be_truthy
   end
 
   it 'should retrieve a Nfe by id' do
-    nfe_id = "a66bf85c-d60f-4ad0-a5e0-9978a7c90000"
+    nfe_id = "04097b2b-f6e7-4886-95f9-efb32ccb0000"
     nfe = Enotas::Nfe.retrieve(@empresa_id, nfe_id)
 
     expect(nfe[:id]).to eq(nfe_id)
