@@ -30,9 +30,6 @@ module Enotas
 
       rescue RestClient::ExceptionWithResponse => e
         if rcode = e.http_code and rbody = e.http_body
-          puts url
-          puts e.http_code
-          puts e.http_body
           rbody = JSON.parse(rbody)
           rbody = Util.symbolize_names(rbody)
 
